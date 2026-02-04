@@ -94,7 +94,7 @@ async function createChallengeRepo(username: string) {
 
 function requestGitHubOAuth() {
   const clientId = Deno.env.get("GITHUB_CLIENT_ID");
-  const redirectUri = "http://localhost:8000/oauth/callback";
+  const redirectUri = "http://gh-instancer.plfanzen.garden/oauth/callback";
 
   const params = new URLSearchParams({
     client_id: clientId!,
