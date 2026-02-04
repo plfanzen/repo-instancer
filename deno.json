@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@octokit/auth-app": "npm:@octokit/auth-app@^8.2.0",
+    "@octokit/auth-oauth-app": "npm:@octokit/auth-oauth-app@^9.0.3",
+    "@octokit/rest": "npm:@octokit/rest@^22.0.1",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.6"
+  }
+}
