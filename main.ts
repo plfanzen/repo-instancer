@@ -133,6 +133,10 @@ async function handleOAuthCallback(code: string) {
     type: "deleteAuthorization",
   });
 
+  if (username.toLowerCase() !== "aarondewes" && username.toLowerCase() !== "c0rydoras")
+      return new Response("You are not allowed to authenticate", { status: 403 });
+  }
+
   return createChallengeRepo(username);
 }
 
